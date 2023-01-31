@@ -1,0 +1,237 @@
+/*Dextop and laptop size screen layout for responsivness*/
+ -webkit::scrollbar{
+    display: none;
+ }
+
+ *{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+ }
+ body{
+    background-image: url("Images/Bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-attachment: fixed;
+ }
+ #clock-box{
+    display: none;
+    height: 300px;
+    width: 300px;
+    background-image: url("Images/clock.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: fixed;
+    top: 12%;
+    left: 37%;
+    box-shadow: 6px 9px 43px black;
+    animation-name: clock;
+    animation-iteration-count: 1;
+    animation-duration: .8s;
+  }
+  #message{
+    color: #606060;
+    position: absolute;
+    top: 21%;
+    left: 41.6%;
+    font-family: system-ui;
+    font-size: 19px;
+  }
+  @keyframes clock {
+    from{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    left: 49%;
+    top: 32%;
+    }
+    to{
+        opacity: 1;
+        height:300px;
+        width:300px;
+    }
+   }
+   #hourhand{
+    position: relative;
+    height: 63px;
+    width: 4px;
+    top: 28%;
+    left: 49.35%;
+    background-image: linear-gradient(45deg, transparent, #15c300);
+    transform-origin: bottom;
+    border-radius: 3px;
+   }
+   #minutehand{
+    position: relative;
+    height: 97px;
+    width: 5px;
+    top: -6%;
+    left: 49.2%;
+    background-image: linear-gradient(45deg,transparent, #ffcd83, #ff9800);
+    transform-origin: bottom;
+    border-radius: 3px;
+ }
+ #secondhand{
+    position: relative;
+    height: 120px;
+    width: 2px;
+    top: -44%;
+    left: 49.2%;
+    background-image: linear-gradient(45deg,transparent, #ff0000, #ff1100);
+    transform-origin: bottom;
+    border-radius: 3px;
+  }
+
+  #btn-on,#btn-off{
+    position: fixed;
+    top: 25%;
+    left: 21%;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 41px;
+    font-family: system-ui;
+    font-weight: 800;
+    height: auto;
+    width: auto;
+    border:none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  #btn-on{
+    background-color: #32cd323b;
+    border: 3px solid limegreen;
+    color: black;
+   }
+   #btn-on:hover{
+    background-color: limegreen;
+    border: none;
+    color: white;
+   }
+   #btn-on:active{
+    background-color: red;
+   }
+   #btn-off{
+    display:none;
+    display: none;
+    background-color: #ff110047;
+    border: 3px solid #ff110091;
+    color: black;
+   }
+   #btn-off:hover{
+    background-color: red;
+    border: none;
+    color: white;
+    }
+    #btn-off:active{
+    background-color: limegreen;
+    }
+
+    #clock-alert-on{
+    background-image: linear-gradient(327deg, #00b907, #006004a8,transparent);
+    color: white;
+     }
+     #clock-alert-off{
+    color: black;
+    background-image: linear-gradient(327deg, #ff0000e3, #ff1604d1,transparent);
+     }
+
+     #clock-alert-on,#clock-alert-off{
+    display: none;
+    height: 400px;
+    width: 300px;
+    position: fixed;
+    right: -53%;
+    top: 7%;
+    font-size: 51px;
+    animation-name: clock-alert;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 800;
+    border-radius: 21px;
+ }
+ @keyframes clock-alert{
+    0%{
+        /*opacity:0;*/
+        right: -29%;
+    }
+    50%{
+        right:5%;
+    }
+ }
+
+
+
+/*Tablet size screen layout for responsivness*/
+
+ @media(max-width:998px){
+ body{
+    background-size:152vh;
+ } 
+    #clock-box{
+    top: 9%;
+    left: 31%;
+    }
+        #btn-on,#btn-off{
+    top: 25%;
+    left: 14%;
+    padding: 5px;
+    font-size: 25px;
+    }
+    #clock-alert-on,#clock-alert-off{
+    height: 300px;
+    width: 200px;
+    font-size: 40px;
+    }
+
+ }
+
+
+
+/*small mobile size screen layout for responsivness*/
+
+ @media(max-width:425px){
+    #clock-box{
+        left:15%;
+    }
+
+    #btn-on,#btn-off{
+    top: 4%;
+    left: 4%;
+    padding: 5px;
+    font-size: 15px;
+    }
+
+        #clock-alert-on,#clock-alert-off{
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    right: 13%;
+    top: -23%;
+    }
+    @keyframes clock-alert{
+        0%{
+            top: -23%;
+        }
+        50%{
+            top: 5%;
+        }
+    }
+ }
+
+
+
+/*very small mobile size screen layout for responsivness*/
+
+ @media(max-width: 320px){
+    #clock-box{
+        left:3%;
+    }
+
+
+ }

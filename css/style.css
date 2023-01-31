@@ -1,0 +1,78 @@
+::-webkit-scrollbar{
+	display: none;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+}
+body{
+	overflow-y:hidden;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#solar{
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+.calc{
+	background-color: #ff000000;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: system-ui;
+    border: 1px solid red;
+    border-radius: 7px;
+    transition: all .5s ease;
+    position: absolute;
+    top: 50%;
+}
+.calc:hover{
+	background-color: red;
+	border: none;
+	cursor: pointer;
+	color: white;
+}
+.time{
+		background-color: #ff000000;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: system-ui;
+    border: 1px solid red;
+    border-radius: 7px;
+    transition: all .5s ease;
+    position: absolute;
+    top: 25%	;
+}
+
+.time:hover{
+	background-color: red;
+	border: none;
+	cursor: pointer;
+}
+@media (max-width: 768px){
+#solar{
+	display: none;
+	width:auto;
+	position: fixed;
+	left:-12%;
+	top: 0px;
+}
+
+}
+
+
+@media (max-width: 320px){
+#solar{
+	left: -100%;
+}
+}

@@ -1,0 +1,319 @@
+ * {  
+  box-sizing: border-box;  
+  font-family: 'Roboto', sans-serif;  
+  overflow-y: none;
+}  
+body {  
+  background:transparent;
+  overflow-y: none;
+
+}  
+.container {
+  display: none;
+  animation-name: zoomin;
+  animation-duration: 1s;  
+  width: auto;    
+  margin: 20px;  
+  color:black;  
+}  
+  @keyframes zoomin {
+  from {opacity:0;width: 0px;}
+  to {opacity:1; width: 275px;}
+}
+
+.calc-body {  
+  width: 275px;  
+  margin: auto;  
+  border-radius: 100px;
+  min-height: 400px;  
+  box-shadow: 0 8px 50px -7px black;  
+}  
+.calc-screen {  
+  width: 100.7%;
+  background-color:#29292a;
+  margin-bottom:0%;  
+  height: 150px;  
+  padding: 20px;  
+}  
+.calc-operation {  
+  text-align: right;  
+  color: #727B86;  
+  font-size: 21px;  
+  padding-bottom: 10px;  
+  border-bottom: dotted 1px;  
+}  
+.calc-typed {  
+  margin-top: 20px;  
+  font-size: 45px;  
+  text-align: right;  
+  color: #fff;  
+}  
+.calc-button-row {  
+  width: 100%;  
+  background: #3C4857;  
+}  
+.button {  
+  width: 25%;  
+  background: #425062;  
+  color: #fff;  
+  padding: 20px;  
+  display: inline-block;  
+  font-size: 32px;  
+  text-align: center;  
+  vertical-align: middle;  
+  margin-right: -4px;  
+  border-right: solid 2px #3C4857;  
+  border-bottom: solid 2px #3C4857;  
+  transition: all 0.2s ease-in-out;  
+}  
+.button.l {  
+  color: #AEB3BA;  
+  background: #404D5E;  
+}  
+.button.c {  
+  color: #D95D4E;  
+  background: #404D5E;  
+}  
+.button:hover {  
+  background: #1bd7e8;  
+    
+}  
+.button.c:hover {  
+  background: #E0B612;  
+  color: #fff;  
+}  
+.button.l:hover {  
+  background: #E0B612;  
+  color: #fff;  
+}  
+.blink-me {  
+  color: #E0B612;  
+}  
+html {  
+  height: 100vh;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  background-color: #2d3436;  
+  background-image: url("1.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  animation-name: fadeoff;
+  animation-duration:120s;
+  animation-iteration-count: infinite;
+  font-family: 'Cookie', cursive;  
+}  
+@keyframes fadeoff {
+  from {background-color:#2d3436;}
+  to {background-color: #b78b06f7;}
+}
+.title:hover {  
+  background: #E0B612;  
+  color: #fff;  
+}  
+.title {  
+margin-bottom: 10px;  
+padding: 5px 0;  
+font-size: 40px;  
+font-weight: bold;  
+text-align: center;  
+color: #AEB3BA;  
+font-family: 'Cookie', cursive;  
+}  
+input[type=button] {  
+  width: 60px;  
+  height: 60px;  
+  float: left;  
+  padding: 0;  
+  margin: 5px;  
+  box-sizing: border-box;  
+  background: #ecedef;  
+  border: none;  
+  font-size: 30px;  
+  line-height: 30px;  
+  border-radius: 50%;  
+  font-weight: 700;  
+  color: #5E5858;  
+  cursor: pointer;    
+}  
+input[type=text] {  
+    width: 270px;
+    height: 60px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    color:rgb(255, 213, 0);
+    text-align: right;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+    left: -18%;
+    top: 10%;
+    margin: 0 25px;
+  } 
+  #res{
+    color:limegreen;
+  }
+.calculator {  
+  background-color: #c0c0c0;  
+  box-shadow: 0px 0px 0px 10px #666;  
+  border: 5px solid black;  
+  border-radius: 10px;  
+}
+#buttons2{transition: all .4s ease-in-out}
+#buttons1{width:50.3%;}     
+#buttons1:hover{background-color: limegreen;color: black;}
+#buttons2:hover{
+  background-color:pink;
+  font-weight: bold;
+  color: darkcyan;
+  font-size:30%;
+  padding:.7%;}
+#buttons3:hover{background-color:red;color:black;font-weight:bold;font-size:418%;padding:0%;}
+#result{margin-top: -9%;top: -4%;}
+ .on{
+    background-color: transparent;
+    position: absolute;
+    top: 25%;
+    border: 2px solid limegreen;
+    left: 5%;
+    width: 6%;
+    height: 5%;
+    color: white;
+    font-size: 144%;
+    font-family: revert;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+  }
+  .on:hover{
+    background-color: limegreen;
+    border: none;
+    color:black;
+  
+  }
+  .on:active{
+    background-color: black;
+    color: white;
+    font-weight:800;
+    width: 5%;
+    height: 4%;
+    position: absolute;
+    top: 25%;
+    left: 5.5%;
+  }
+
+ .off{
+    background-color: transparent;
+    position: absolute;
+    top: 25%;
+    border: 2px solid #e71c0d;
+    left: 14%;
+    width: 6%;
+    height: 5%;
+    color: white;
+    font-size: 144%;
+    font-family: revert;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+  } 
+   .off:hover{
+    background-color:#e71c0d;
+    border: none;
+    color: white;
+  }
+      .off:active{
+    background-color: black;
+    color: white;
+    font-weight:800;
+    width: 5%;
+    height: 4%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+  }
+  .cal{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    font-size: 259%;
+    font-weight: 900;
+    font-family: fangsong;
+    color: #1cbfb0;
+  }
+  #back-img{
+    height: 100%;
+  width: 100%;
+    border-radius: 50%;
+ }
+ #rotate{
+    height: 28px;
+    width: 22px;
+    border-radius: 6px;
+    transition: all .4s ease-in-out;
+ }
+
+ .grid-container {
+
+      height: 395px;
+    width: 200px;
+    position: absolute;
+    right: 25.2%;
+    top: 31.3%;
+  display: grid;
+  /*grid-template-columns: auto auto auto auto;*/
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns:repeat(3,1fr);
+  background-color: #fff;
+}
+.grid-item {
+    background-color: #404D5E;
+  border: 1px solid #3C4857;
+  padding: 5%;
+  font-size: 30px;
+  color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+ .grid-item:hover{
+  background-color:goldenrod;
+ }
+ #scientific{
+  display:none; 
+    animation-name:scrollin;
+  animation-duration: .5s;
+ }
+   @keyframes scrollin {
+  from {opacity:0;width: 0px;}
+  to {opacity:1;width: 200px;}
+}
+  .on,.off{
+  cursor: pointer;  
+ }
+
+
+@media (max-width:760px){
+ .cal,.on,.off{
+  display: none;
+ }
+}
+
+@media (max-width:320px){
+
+.calc-screen {
+    width: 100vw;
+    position: relative;
+    top:0px;
+    left: -23px;
+}
+
+.calc-button-row {
+    width: 100vw;
+    background: #3C4857;
+    position: relative;
+    top: 0px;
+    left: -23px;
+}
+} 

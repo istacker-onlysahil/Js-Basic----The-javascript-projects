@@ -1,0 +1,67 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  
+         Basic Calculator
+    </title>  
+    <link rel="shortcut icon" href="c.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Calc(CSS).css"> 
+</head>  
+<body>  
+
+
+<!-- the calculator html code starts from here   -->
+  <div class="container" id="calc">  
+     <div class="calc-body">  
+     <div class="calc-screen" id="displayscreen">  
+      <div class="calc-operation"><input type="text" name="text" id="result" placeholder="0  "></div>  
+      <div class="calc-typed"><input type="text" name="text" id="res" placeholder="Result"></div>  
+    </div>  
+
+<!-- =============================== Middle row of the calculator ========================================== -->
+
+    <div class="calc-button-row">  
+      <div class="button c" id="buttons3" onclick="clearall()">&times;</div>  
+      <div class="button l" id="buttons2"  onclick="back()" ><img id="back-img" src="back.png" alt=""></div>  
+      <div class="button l" onclick="onemod()"> % </div>  
+      <div class="button l" onclick="onediv()"> / </div>  
+    </div>  
+    <div class="calc-button-row">  
+      <div class="button" onclick="attach(7)"> 7 </div>  
+      <div class="button" onclick="attach(8)"> 8 </div>  
+      <div class="button" onclick="attach(9)"> 9 </div>  
+      <div class="button l" onclick="onemulti()"> x </div>  
+    </div>  
+    <div class="calc-button-row">  
+      <div class="button" onclick="attach(4)"> 4 </div>  
+      <div class="button" onclick="attach(5)"> 5 </div>  
+      <div class="button" onclick="attach(6)"> 6 </div>  
+      <div class="button l" onclick="oneminus()"> - </div>  
+    </div>  
+    <div class="calc-button-row">  
+      <div class="button" onclick="attach(1)"> 1 </div>  
+      <div class="button" onclick="attach(2)"> 2 </div>  
+      <div class="button" onclick="attach(3)"> 3 </div>  
+      <div class="button l" onclick="twoplus()"> + </div>  
+    </div>  
+
+    <div class="calc-button-row">  
+      <div class="button"onclick="dot()">.</div>  
+      <div class="button" onclick="zero()"> 0 </div>  
+          <div class="button l" id="buttons1" onclick="fin()">  = </div>  
+      </div>  
+    </div>  
+ </div>  
+<!-- ==================================== On and off Buttons =============================================== -->
+
+<span class="cal">Calculator</span>
+<button class="on" onclick="calcOn()">On</button>
+<button class="off" onclick="calcOff()">Off</button>
+
+
+<!--=================================== javascript file linked here ====================================  -->
+<script src="brain.js"></script>
+</body>  
+</html> 

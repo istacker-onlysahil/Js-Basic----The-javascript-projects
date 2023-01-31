@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="Images/clock-favicon.png">
+	<title>The Clock</title>
+</head>
+<body>
+
+<!-- main clock box  -->
+		<div id="clock-box">
+			<!-- clock message -->
+			<span id="message">Quartz</span>
+			<!-- hour-hand code goes here -->
+			<div id="hourhand"></div>	
+			<!-- minute-hand code goes here -->
+			<div id="minutehand"></div>	
+			<!-- second-hand code goes here -->
+			<div id="secondhand"></div>	
+		</div>
+
+
+<!-- on and off button code goes here  -->
+	<button id="btn-off" onclick="clockToggle()">Off</button>
+	<button id="btn-on" onclick="clockToggle()">On</button>
+
+
+<!-- alert box apperaring after clicking on and off code goes here /  -->
+	<div id="clock-alert-on">Clock Activated</div>
+	<div id="clock-alert-off">Clock De-Activated</div>
+
+<!-- javascript file refrence  -->
+	<script src="time.js"></script>
+	
+</body>
+</html>
